@@ -17,15 +17,10 @@
     <!-- Main-Stylesheets -->
     <!-- <link rel="stylesheet" href="css/normalize.css"> -->
     <link rel="stylesheet" href="style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+    <link rel="stylesheet" href="css/responsive.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
-    <link href="js/sweetalert/node_modules/sweetalert2/dist/sweetalert2.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    
 </head>
 
 <body class="site2" data-spy="scroll" data-target=".mainmenu-area" style="overflow-x: hidden;">
@@ -69,7 +64,7 @@
 
     <!--Header-Area-->
 <header class="header-area overlay" id="home-area">
-    <section class="cta-area bg-img bg-overlay" style="background-image: url(images/backg2.jpg); background-size:cover; background-position: center center; width: 101%;">
+    <section class="cta-area bg-img bg-overlay" >
         <div class="vcenter">
             <div class="container">
                 <div class="row">
@@ -95,7 +90,7 @@
                     <div class="row" style="padding: 2rem 2rem ;">
                         <div class="col-xl-12">
                             <div class="section_title mb-70 menu-temp">
-                                <h3>Our Menu</h3>
+                                <h3 class="order_area_h3">Our Menu</h3>
                             </div>
                         </div>
                     </div>
@@ -113,7 +108,7 @@
                                 <p>Beans Stew   <br>   Plantain <br>
                                         Egg   |   Fish<br>
                                 </p>
-                                <a href="#" class="boxed_btn">Order Now!</a>
+                                <a href="#contact-area" class="boxed_btn">Order Now!</a>
                             </div>
                         </div>
                     </div>
@@ -131,7 +126,7 @@
                                         Egg   |   Fish <br>
                                         Gari & Hot pepper
                                 </p>
-                                <a href="#" class="boxed_btn">Order Now!</a>
+                                <a href="#contact-area" class="boxed_btn">Order Now!</a>
                             </div>
                         </div>
                     </div>
@@ -149,31 +144,15 @@
                                         Egg    <br>
                                         Gari & Hot pepper
                                 </p>
-                                <a href="#" class="boxed_btn">Order Now!</a>
+                                <a href="#contact-area" class="boxed_btn">Order Now!</a>
                             </div>
                         </div>
                     </div>
-                    <a class="btn btn-lg btn-primary smoth"  onclick="sweetalert()">View Extras</a>
-                    <script src="js/sweetalert/node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
-                    <script src="js/sweetalert/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
-                    <script src="js/sweetalert/node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
-                    <script src="js/sweetalert/node_modules/sweetalert2/dist/sweetalert2.js"></script>
-                    <link rel="stylesheet" href="js/sweetalert/node_modules/sweetalert2/dist/sweetalert2.css">
-                    <link rel="stylesheet" href="js/sweetalert/node_modules/sweetalert2/dist/sweetalert2.min.css">
-                    <script>
-                        function sweetalert(){
-                            Swal.fire({
-                                    title: 'Extras',
-                                    html: 'Avocado - GHc 5 <br> Rice - GHc 5 <br> Palm oil & Coconut oil options available',
-                                    showClass: {
-                                        popup: 'animate__animated animate__fadeInDown'
-                                                },
-                                    hideClass: {
-                                        popup: 'animate__animated animate__fadeOutUp'
-                                                 }
-                                    });
-                         }
-                    </script>
+                    <div>
+                        <a class="btn btn-lg btn-primary smoth"  onclick="sweetalert()">View Extras</a>
+                    </div>
+                   
+                    
                 </div>
             </div>
         </div>
@@ -190,7 +169,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
-                            <div class="header-text">
+                            <div class="header-text ">
                                 <h2 class="header-title wow fadeInUp upper" data-wow-delay="0.4s" style="font-size: 55px; text-transform: none; color: white;"><span class="satisfy text-temp">your favorite local dish right at your door step</span></h2>
                             </div>
                         </div>
@@ -204,12 +183,12 @@
 
 
  <section class="section-padding gray-bg" id="gallery-area" class="wow fadeInUp upper" data-wow-delay="0.4s">
-    <div class="container price-box">
+    <div class="container image-box">
         <div class="row">
             <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                 <div class="page-title text-center">
                     <h2 class="title">Some Of Our Captured Dishes</h2>
-                    <p>Take your time to browse through</p>
+                    <p style="font-size: 1.6rem;">Take your time to browse through</p>
                 </div>
             </div>
         </div>
@@ -307,7 +286,7 @@
                     </div>
                 </div>
                 </div>
-            </div>
+            <div>
             <div class="col-xs-12 col-sm-12 col-md-3 mix">
                 <div class="filter-box" style="margin-bottom: 0.5rem;">
                     <div class="filter-image">
@@ -318,7 +297,7 @@
                     </div>
                 </div>
                 </div>
-            </div>
+          
             <div class="col-xs-12 col-sm-12 col-md-3 mix">
                 <div class="filter-box" style="margin-bottom: 0.5rem;">
                     <div class="filter-image">
@@ -341,36 +320,36 @@
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <div class="page-title text-center">
                         <h2 class="title">What Our Client Say</h2>
-                        <p>There are many variations of passages of Lorem Ipsum available.</p>
+                       
                     </div>
                 </div>
             </div>
-            <!-- <div class="row"> -->
-                <!-- <div class="col-xs-12 col-md-10 col-md-offset-1">
+            <div class="row">
+                 <div class="col-xs-12 col-md-10 col-md-offset-1">
                     <div class="testimonials">
                         <div class="single-testimonial text-center">
                             <div class="testimonial-text">
-                                <em>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</em>
+                                <em>Fell in love with every bite. Gob3 at its best. </em>
                             </div>
                             <h3>Samirao Boekeo</h3>
                             <h6>CEO, Classic Group</h6>
                         </div>
                         <div class="single-testimonial text-center">
                             <div class="testimonial-text">
-                                <em>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</em>
+                                <em>This is the nicest red red I've eaten in a long time. I love every bit of it. Tastes so good and it's really affordable.</em>
                             </div>
-                            <h3>Samirao Boekeo</h3>
-                            <h6>CEO, Classic Group</h6>
+                            <h3>Johnson Nhyira</h3>
+                            <h6>Worker, Flamedge group</h6>
                         </div>
                         <div class="single-testimonial text-center">
                             <div class="testimonial-text">
-                                <em>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</em>
+                                <em>Introduced to this awesome food by a friend. I was never a fan of beans and gari but the Gobish changed everything. I love the gob3 from here. You should try it out.</em>
                             </div>
-                            <h3>Samirao Boekeo</h3>
-                            <h6>CEO, Classic Group</h6>
+                            <h3>Jefferson Aggor</h3>
+                            <h6>Worker, AETS Gh</h6>
                         </div>
                     </div>
-                </div> -->
+                </div> 
             </div>
         </div>
     </section>
@@ -382,6 +361,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <div class="page-title">
                             <h3 class="bar-title">Contact Now</h3>
+                            <p class="lead">Wanna place an order, give us a text or call !</p>
                         </div>
                     </div>
                 </div>
@@ -411,23 +391,19 @@
                                 </li>
                                 <li>
                                     <span class="info-icon">
-                                        <i class="icofont icofont-ui-cell-phone"></i>
-                                    </span> (+233) 24 445 5456
+                                       <a href="tel:+233244455456"><i class="icofont icofont-ui-cell-phone"></i></a> 
+                                    </span><a style="color: white;" href="tel:+233244455456">(+233) 24 445 5456</a> 
                                 </li>
+                                
                             </ul>
-                            <a href="#" class="btn btn-block btn-primary btn-lg smoth" style="border: 2px dotted white;">Order Now</a>
+                            <a href="https://wa.me/c/233244455456" class="btn btn-block btn-primary btn-lg smoth" style="border: 2px dotted white;">Order Now</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    
     <footer class="footer-area">
         <div class="footer-top section-padding">
             <div class="container">
@@ -446,7 +422,8 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+        </div>
+            <div class="footer-bottom" style="margin-top:5rem">
             <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
@@ -454,6 +431,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </footer>
     <!-- Footer-Area / -->
@@ -465,18 +443,32 @@
     <!--Plugin-JS-->
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/appear.js"></script>
-    <script src="js/bars.js"></script>
-    <script src="js/waypoints.min.js"></script>
+    
     <script src="js/counterup.min.js"></script>
-    <script src="js/easypiechart.min.js"></script>
     <script src="js/mixitup.min.js"></script>
-    <script src="js/contact-form.js"></script>
+   
     <script src="js/scrollUp.min.js"></script>
     <script src="js/magnific-popup.min.js"></script>
     <script src="js/wow.min.js"></script>
     <!--Main-active-JS-->
     <script src="js/main.js"></script>
-    <script src="js/maps.js"></script>
+
+    <script src="js/sweetalert/node_modules/sweetalert2/dist/sweetalert2.all.js"></script>
+                   <script>
+                        function sweetalert(){
+                            Swal.fire({
+                                    title: 'Extras',
+                                    html: 'Avocado - GHc 5 <br> Rice - GHc 5 <br> Palm oil & Coconut oil options available',
+                                    showClass: {
+                                        popup: 'animate__animated animate__fadeInDown'
+                                                },
+                                    hideClass: {
+                                        popup: 'animate__animated animate__fadeOutUp'
+                                                 }
+                                    });
+                         }
+                    </script>
+
 </body>
 
 </html>
