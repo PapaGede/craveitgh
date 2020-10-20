@@ -588,6 +588,7 @@ a.scrolldown {
   .header-area {
     height: 100vh;
     display: flex;
+    background-attachment: scroll;
   }
   .header-text h2 {
     font-size: 3rem;
@@ -905,7 +906,7 @@ a.scrolldown {
 }
 
 @media (max-width: 47.94em) {
-  .smoth {
+  .smoth_1 {
     margin-left: 2rem;
   }
 }
@@ -1979,6 +1980,12 @@ a.scrolldown {
   background-image: linear-gradient(to right, #f5af19, #f4781fb4);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a1c4fd', endColorstr='#c2e9fb', GradientType=1);
   border-radius: 3px;
+}
+
+@media only screen and (max-width: 47.94em) {
+  .contact-info {
+    padding: 30px 15px;
+  }
 }
 
 .contact-info .info {

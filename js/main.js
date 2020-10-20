@@ -167,15 +167,11 @@
     closeOnContentClick: true,
     midClick: true, // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
-
-  /* Preloader Js
-    ===================*/
-  $(window).on("load", function () {
-    $(".preloader").fadeOut(500);
-    /*WoW js Active
-        =================*/
-    new WOW().init({
-      mobile: false,
-    });
-  });
 })(jQuery);
+
+// Preloader
+const preloader = document.querySelector(".preloader");
+
+setTimeout(function () {
+  preloader.style.display = "none";
+}, 3000);
